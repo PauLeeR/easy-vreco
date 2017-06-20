@@ -18,10 +18,21 @@
 </head>
 <body>
 	<section>
-		<div class="col-md-4">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" >
 			<div class="row">
-			<button id="findme">Encuéntrame</button>
+				<button id="findme">Encuéntrame</button>
 			</div>
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-left">
+			<p>Origen</p>
+			<input id="from" class="controls" type="text" placeholder="Introduce una ubicación">
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-left">
+			<p>Destino</p>
+			<input type="text" id="to" class="controls" type="text" placeholder="Introduce una ubicación">
+		</div>
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+			<button id="route">Ruta</button>
 		</div>
 		<div class="row">
 			<div class="col-md-12 col-sm-12" id="map">
@@ -31,16 +42,8 @@
 		</div>
 	</section>
 
-
-
-
-
-
-
-
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4P856GQRhEJ8aozVfoVQswmTBuCgyJwU&callback=initMap"
-	type="text/javascript"></script>
-	<!-- Script de jQuery y Bootstrap -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4P856GQRhEJ8aozVfoVQswmTBuCgyJwU&callback=initMap&libraries=places"></script>
+	<!-- Script de jQuery y Bootstrap (necessary for Bootstrap's JavaScript plugins)-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
